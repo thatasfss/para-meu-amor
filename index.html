@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenagem Especial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="fundo-musgo">
+
+    <section class="secao-capa">
+        <header class="header-homenagem">
+            <h1 class="titulo-gigante">Eu e Meu Amor</h1>
+        </header>
+        <div class="div-foto-principal">
+            <img src="foto_principal.jpg.jpeg" alt="Nossa Foto Principal" class="foto-central">
+        </div>
+        <div class="seta-rolagem">▼</div>
+    </section>
+
+    <section class="secao-galeria">
+        <h2 class="titulo-galeria">Nossos Momentos</h2>
+        <div class="container-miniaturas">
+            <img src="1foto.jpg.jpeg.jpeg" alt="Foto 1" class="foto-mini hidden">
+            <img src="2foto.jpg.jpeg.jpeg" alt="Foto 2" class="foto-mini hidden">
+            <img src="3foto.jpg.jpeg.jpeg" alt="Foto 3" class="foto-mini hidden">
+        </div>
+    </section>
+
+    <section id="secao-texto-final" class="secao-final hidden-texto">
+        <div class="bloco-texto">
+            <p class="texto-romantico">“Luiz, meu amor, você é incrível, e nenhuma palavra é capaz de explicar meu carinho e apreço por você! Meu coração é muito mais feliz quando junto ao seu, porque você me completa.”</p>
+        </div>
+    </section>
+
+    <button class="botao-coracao" id="btnCoracao">
+        <span class="coracao">💚</span>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>

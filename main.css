@@ -1,0 +1,44 @@
+/* ... (Todo o código anterior permanece igual) ... */
+
+:root { --verde-musgo: #4b5320; }
+html { scroll-behavior: smooth; }
+body { background-color: var(--verde-musgo); color: white; margin: 0; overflow-x: hidden; }
+
+.secao-capa, .secao-galeria { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; }
+
+.titulo-gigante { font-family: 'Playfair Display', serif; font-size: 80pt; color: white; text-align: center; text-transform: uppercase; }
+.foto-central { max-height: 60vh; border: 10px solid white; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }
+
+/* Estilo das fotos da galeria */
+.foto-mini { width: 250px; height: 250px; object-fit: cover; border: 5px solid white; transition: all 0.6s ease-out; opacity: 0; transform: translateX(100px); }
+.foto-mini.show { opacity: 1; transform: translateX(0); }
+
+/* --- ESTILO DA SEÇÃO FINAL --- */
+.secao-final {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 10%;
+    transition: opacity 1s ease-in;
+}
+
+.hidden-texto { opacity: 0; display: none; } /* Começa escondido */
+
+.bloco-texto {
+    border-left: 3px solid white;
+    padding-left: 30px;
+    max-width: 800px;
+}
+
+.texto-romantico {
+    font-family: 'Playfair Display', serif;
+    font-size: 28pt;
+    line-height: 1.5;
+    font-style: italic;
+    color: #f0f0f0;
+}
+
+.botao-coracao { position: fixed; bottom: 30px; right: 30px; background: none; border: none; cursor: pointer; z-index: 100; }
+.coracao { font-size: 50pt; }
